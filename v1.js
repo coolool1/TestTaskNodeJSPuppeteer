@@ -7,7 +7,6 @@ const geoposition = process.argv[3];
 async function isTruePage(page) {
     const selectorError = ".UiErrorNotFoundBase_root___2Yjy"
     const elem = await page.$(selectorError);
-    console.log(elem)
     return elem != null
 }
 
